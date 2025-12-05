@@ -10,20 +10,26 @@
 .body{
     margin: 0px;
     padding: 0px;
-    background-color: antiquewhite;
+    background-color: rgb(255, 255, 255);
 }
 
 .menu{
-    background-color: white;
-    height: 80px;
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    background-color: #0c121e;
+    justify-content: space-between;
 }
-
 .menu img{
-    height: auto;
+    height: 65px;
+    width: auto;
+}
+.Buscador{
 }
 
-.Buscador{
-
+.Buscador input{
+    width: 500px;
 }
 
 .Liquid-button{
