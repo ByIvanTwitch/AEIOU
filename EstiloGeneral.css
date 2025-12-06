@@ -18,13 +18,22 @@
     flex-direction: row;
     display: flex;
     align-items: center;
+    align-content: center;
+    align-self: center;
     background-color: #0c121e;
     justify-content: space-between;
+    color: white;
 }
 .menu img{
     height: 65px;
     width: auto;
 }
+.Title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .Buscador{
 }
 
