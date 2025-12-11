@@ -25,7 +25,7 @@
     color: white;
 }
 .menu img{
-    height: 65px;
+    height: 55px;
     width: auto;
 }
 .Title{
@@ -33,13 +33,49 @@
     flex-direction: row;
     align-items: center;
 }
+.menu button{
+    background-color: transparent;
+    border: none;
+    width: 10px;
+    color: white;
+}
 
-.Buscador{
+.menu button:hover{
+    width: fit-content;
+    height: auto;
+    background-color: color(#7ba7ff);
+    
+}
+
+.User button{
+    width: 90px;
+}
+
+.Buscador {
+    display:flex;
+}
+
+.Buscador button{
+    margin-bottom: 0;
 }
 
 .Buscador input{
     width: 500px;
+    margin: 2px;
+    border-radius: 10px;
+    align-items: center;
+    padding-left:5px;
+    background-color: rgb(54, 56, 75);
+    border: 0px;
+    color: white; 
 }
+.Buscador ::placeholder { color: rgb(255, 255, 255); }
+
+
+.aside{
+    width: 100px;
+}
+
 
 .Liquid-button{
     border-style: solid;
