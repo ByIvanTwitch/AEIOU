@@ -1,7 +1,6 @@
-let estadomenu;
-
 function Menu_displace(){
-    console.log(document.getElementById("menuaside").style.opacity)
+    console.log(document.getElementById("menuaside").classList)
+
 
     if(document.getElementById("menuaside").style.opacity == 0){
         console.log("INSISIBLE")
