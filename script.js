@@ -1,13 +1,20 @@
 let estadomenu;
 
 function Menu_displace(){
-    console.log(document.getElementById("menuaside").style.opacity)
+    console.log(document.getElementById("menuaside").classList)
 
-    if(document.getElementById("menuaside").style.opacity == 0){
+    if(estadomenu == null){
+        console.log("VISIBLE")
+        document.getElementById("menuaside").classList.remove('active');
+        estadomenu = true
+    }
+    else if(estadomenu == true){
         console.log("INSISIBLE")
-        document.getElementById("menuaside").style.opacity = 1;
+        document.getElementById("menuaside").classList.add('active');
+        estadomenu = false
     }else{
         console.log("VISIBLE")
-        document.getElementById("menuaside").style.opacity = 0;
+        document.getElementById("menuaside").classList.remove('active');
+        estadomenu = true
     }
 }

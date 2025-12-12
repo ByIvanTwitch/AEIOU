@@ -88,12 +88,12 @@
 .aside:active{
     opacity: 0;
     visibility: hidden;
+    background-color: transparent;
 }
 
 .aside button{
     line-height: 40px;
     font-size: 15px;
-    background-color: transparent;
 
     color: white;
 
