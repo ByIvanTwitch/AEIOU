@@ -1,3 +1,5 @@
+/* General */
+
 @keyframes fadein{
     from{filter: blur(0px);}
     to{filter: blur(3px);}

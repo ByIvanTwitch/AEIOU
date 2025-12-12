@@ -12,3 +12,7 @@ function Menu_displace(){
         document.getElementById("menuaside").style.visibility = 0;
     }
 }
+
+function Menu_profile(){
+
+}
