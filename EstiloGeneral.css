@@ -40,13 +40,6 @@
     color: white;
 }
 
-.menu button:hover{
-    width: fit-content;
-    height: auto;
-    background-color: color(#7ba7ff);
-    
-}
-
 .User button{
     width: 90px;
 }
@@ -73,7 +66,30 @@
 
 
 .aside{
-    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 200px;
+    position: fixed;
+    z-index: 100;
+    background-color: #0c121e;
+    height: 100%;
+    
+}
+.aside button{
+    line-height: 40px;
+    font-size: 15px;
+    background-color: transparent;
+
+    color: white;
+
+    border: none;
+    text-align: left;
+}
+.aside button:hover{
+    color: #0c121e;
+    background-color: white;
+
 }
 
 
