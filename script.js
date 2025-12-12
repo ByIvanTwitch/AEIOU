@@ -14,5 +14,10 @@ function Menu_displace(){
 }
 
 function Menu_profile(){
-
+    if(document.getElementById("loged").style.opacity == 0){
+        document.getElementById("loged").style.opacity = 1;
+    }
+    else{
+        document.getElementById("loged").style.opacity = 0;
+    }
 }
