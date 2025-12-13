@@ -134,7 +134,7 @@
 
 .Content{
     width: 100%;
-    flex-direction: row;
+    flex-direction:column;
     display: flex;
     align-items: center;
     align-content: center;
@@ -161,4 +161,27 @@
 .LoginMenu button:hover{
     background-color: white;
     color:#0c121e;
+}
+
+/* PAGINA CATEGORIAS */
+
+/*PAGINA MOVILES*/
+.productos{
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    align-content:flex-start;
+    align-self:flex-start;
+}
+.productos-apple{
+    display: flex;
+    flex-direction: row;
+}
+.productos-samsung{
+    display: flex;
+    flex-direction: row;
+}
+.producto img{
+    object-fit:contain;
+    margin: 20px;
 }
