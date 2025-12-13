@@ -7,10 +7,14 @@
     <link rel="stylesheet" href="../EstiloGeneral.css">
 </head>
 <body class="body">
+    <div class="LoginMenu" id="loged" style="opacity: 0;">
+        <button>Login</button>
+        <button>Register</button>
+    </div>
     <div class="menu">
         <div class="Title">
-            <img src="../Items/Logo Horizontal.png" alt="Titulo">
             <button> <img src="../Items/three-bar-icon.jpg" alt="" style="width: 30px; height: auto;" onclick="Menu_displace()">  </button>
+            <img src="../Items/Logo Horizontal.png" alt="Titulo">        
         </div>
         <div class="Buscador">
             <input placeholder="Buscar...">
@@ -18,7 +22,7 @@
             <button><img src="../Items/Search.png" alt="" style="width: 30px; height: auto;"></button>
         </div>
         <div class="User">
-            <button><img src="../Items/Profile.png" alt="" style="width: 30px; height: auto;"> <br>Mi cuenta</button>
+            <button onclick="Menu_profile()"><img src="../Items/Profile.png" alt="" style="width: 30px; height: auto;"> <br>Mi cuenta</button>
             <button><img src="../Items/ShopingKart.png" alt="" style="width: 30px; height: auto;"> <br>Carrito</button>
         </div>
     </div>
