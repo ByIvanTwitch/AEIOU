@@ -29,6 +29,9 @@
     height: 55px;
     width: auto;
 }
+.Title img{
+    padding-right: 50px;
+}
 .Title{
     display: flex;
     flex-direction: row;
