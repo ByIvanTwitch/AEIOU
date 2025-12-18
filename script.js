@@ -32,7 +32,7 @@ function Menu_profile(){
     }
     else{
         document.getElementById("loged").style.opacity = 0;
-        document.getElementById("loged").style.transform = "translate(89vw ,65px)";
+        document.getElementById("loged").style.transform = "translate(89vw ,50px)";
         loged = false
     }
 }
