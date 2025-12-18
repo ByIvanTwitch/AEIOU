@@ -220,3 +220,18 @@
 .productos-linux{
 display: flex;
 flex-direction: row;}
+
+
+
+
+/*PAGINA SOBRE NOSOTROS*/
+
+.explicacion_empresa{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    text-align: center;
+    margin-top: 5%;
+    width: 700px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
