@@ -41,6 +41,10 @@
 .Title button{
     scale: 0.75;
 }
+.Title button img, .Buscador button img, .User button img{
+    width: 30px; 
+    height: auto;}
+
 .menu button{
     background-color: transparent;
     border: none;
