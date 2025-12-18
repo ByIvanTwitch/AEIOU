@@ -57,6 +57,8 @@
 }
 
 .Buscador {
+    position: absolute;
+    transform: translateX(calc(50vw - 250px));
     display:flex;
 }
 
