@@ -1,12 +1,12 @@
 /* General */
 
 @keyframes fadein{
-    from{filter: blur(0px);}
-    to{filter: blur(3px);}
+    from{background-position: 0% 0%; scale: 1;}
+    to{background-position: 30px -30px; scale: 1.1;}
 }
 @keyframes fadeout{
-    from{filter: blur(3px);}
-    to{filter: blur(0px);}
+    from{background-position: 30% 30%; scale: 1.1;}
+    to{background-position: 0% 0%; scale: 1;}
 }
 .body{
     margin: 0px;
@@ -113,14 +113,17 @@
 
 
 .Liquid-button{
+    background-position: 0% 0%;
     border-style: solid;
     border-width: 1px;
     border-radius: 30px;
     border-color: white;
-    background-color: rgba(255, 255, 255, 0.404);
+    background: linear-gradient(45deg,#0c121e0e 20% , #ff7070 30%, #0c121e0c);
     cursor: pointer;
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.05), inset 2px 2px 1px 0 rgba(255,255,255,0.1), inset -1px -1px 1px 1px rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(3px);
+        animation-name: fadeout;
+    animation-duration: 0.25s;
     
 }
 .Liquid-button img{
@@ -129,10 +132,12 @@
 }
 
 .Liquid-button:hover{
-    scale: 1.1;
+    background-position: 30% 30%;
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1), inset 2px 2px 1px 0 rgba(255,255,255,0.5), inset -1px -1px 1px 1px rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(3px);
-    background-color: #0c121e1e;
+    animation-name: fadein;
+    animation-duration: 1s;
+    scale: 1.1;
 
 }
 
