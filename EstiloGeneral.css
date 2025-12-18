@@ -171,6 +171,9 @@
     color:#0c121e;
 }
 
+
+
+
 /* PAGINA CATEGORIAS */
 .Categorias{
     display: flex;
@@ -179,6 +182,10 @@
     margin-top: 70px;
     margin-right: 70px;
 }
+
+
+
+
 /*PAGINA MOVILES*/
 .productos{
     display: flex;
@@ -191,9 +198,6 @@
     display: flex;
     flex-direction: row;
 }
-.productos-apple div{
-    margin-right: 30px;
-}
 .productos-samsung{
     display: flex;
     flex-direction: row;
@@ -202,3 +206,17 @@
     object-fit:contain;
     margin: 20px;
 }
+
+
+
+
+/*PAGINA MOVILES*/
+.productos-windows div, .productos-linux div, .productos-apple div{
+    margin-right: 30px;}
+.productos-windows{
+    display: flex;
+    flex-direction: row;}
+
+.productos-linux{
+display: flex;
+flex-direction: row;}
