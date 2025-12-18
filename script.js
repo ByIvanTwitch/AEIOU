@@ -19,7 +19,7 @@ function Menu_displace(){
         console.log("VISIBLE")
         document.getElementById("menuaside").style.opacity = 0;
         document.getElementById("menuaside").style.visibility = 0;
-        document.getElementById("menuaside").style.transform = "translate(-10vw ,10px)";
+        document.getElementById("menuaside").style.transform = "translate(-100vw ,100px)";
         aside = false
     }
 }
