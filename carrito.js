@@ -10,6 +10,14 @@ function Product_carrito(){
         moviles += 1;
         console.log("carrito: movil detectado")
     }
+    if(currentid == "portatil"){
+        portatiles += 1;
+        console.log("carrito: portatil detectado")
+    }
+    if(currentid == "ordenadores"){
+        ordenadores += 1;
+        console.log("carrito: ordenador detectado")
+    }
     console.log("carrito: sigo adelante")
     console.log(currentid);
 
