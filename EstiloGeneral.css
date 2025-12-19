@@ -388,7 +388,7 @@ flex-direction: row;}
     backdrop-filter: blur(3px);
 }
 .product-interior img{
-    height: 400px;
+    height: 300px;
     width: auto;
 }
 .row{
