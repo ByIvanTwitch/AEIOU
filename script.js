@@ -24,6 +24,15 @@ function Menu_displace(){
     }
 }
 
+function Menu_cesta(){
+    if(document.getElementById("menuotherside").classList.contains('active')){
+        document.getElementById("menuotherside").classList.remove('active');
+    }else{
+        document.getElementById("menuotherside").classList.add('active');
+    }
+    
+}
+
 function Menu_profile(){
 
     if(loged == false){

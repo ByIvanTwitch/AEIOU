@@ -431,3 +431,44 @@ flex-direction: row;}
     color: white;
     border-radius: 20px;
 }
+
+.otherside{
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 200px;
+    position: fixed;
+    z-index: 100;
+    height: 100%;
+    background-color: #0c121e;  
+    right: 0px; 
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.05), inset 2px 2px 1px 0 rgba(255, 255, 255, 0), inset -1px -1px 1px 1px rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.otherside.active{
+    pointer-events: none;
+    opacity: 0%;
+}
+
+.toped{
+    padding-top: 25px;
+    display: flex;
+    height: 25px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.toped button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: 800;
+}
+
+.centered{
+    padding-top: 100px;
+    justify-content: center;
+    text-align: center;
+}

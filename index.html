@@ -23,7 +23,7 @@
         </div>
         <div class="User" id="User">
             <button onclick="Menu_profile(this)"><img src="./Items/Profile.png" alt=""> <br>Mi cuenta</button>
-            <button onclick="window.open('./Paginas/cesta.html')"><img src="./Items/ShopingKart.png" alt=""> <br>Carrito</button>
+            <button onclick="Menu_cesta()"><img src="./Items/ShopingKart.png" alt=""> <br>Carrito</button>
             <p class="carrito_cantidad" id="carrito_cantidad">0</p>
         </div>
     </div>
@@ -39,10 +39,10 @@
             <a href="./Paginas/sobre nosotros.html">Sobre nosotros</a>
             <a href="./Paginas/contacto.html">Contacto</a>
         </div>
-        <div class="otherside" id="menuotherside">
+        <div class="otherside active" id="menuotherside">
             <div class="toped">
-                <h2>Mi cesta</h2>
-                <button>X</button>
+                <h3>Mi cesta</h3>
+                <button onclick="Menu_cesta()">X</button>
             </div>
             <div class="centered"> 
                 <h3>Tu carrito está vacío</h3>
@@ -76,7 +76,7 @@
         </div>    
     </div>
 
-    <div class="product-overlay active" id="overlayprod">
+    <div class="product-overlay" id="overlayprod">
         <div class="product-interior">
             <div class="superior"><button onclick="Product_Overlay_Close()">X</button></div>
             <img src="" alt="imagen producto" id="imagen-producto">
