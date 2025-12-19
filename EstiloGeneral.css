@@ -13,6 +13,17 @@
     from{background-position: 0 0; scale: 1.1;}
     to{background-position: 100% 100%; scale: 1;}
 }
+
+@keyframes overlayin{
+    from{opacity: 100%;}
+    to{opacity: 0%;}
+}
+
+@keyframes overlayout{
+    from{opacity: 0%;}
+    to{opacity: 100%;}
+}
+
 .body{
     font-family: Raleway;
     margin: 0px;
@@ -334,6 +345,9 @@ flex-direction: row;}
 
 .product-overlay{
 
+    animation-name: overlayin;
+    animation-duration: 0.25s;
+
     /* PROPIEDADES DE CAMBIO DEL OVERLAY */
     pointer-events: none;
     opacity: 0%;
@@ -347,6 +361,8 @@ flex-direction: row;}
 }
 
 .product-overlay.active{
+    animation-name: overlayout;
+    animation-duration: 0.25s;
     pointer-events: all;
     opacity: 100%;
 }
@@ -362,6 +378,14 @@ flex-direction: row;}
 
     display: flex;
     padding-top: 20px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+    border-color: white;
+    background: linear-gradient(45deg,#e6ebf7e0 , #fffffff3, #d2ddf3f3);
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.05), inset 2px 2px 1px 0 rgba(255,255,255,0.1), inset -1px -1px 1px 1px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(3px);
 }
 .product-interior img{
     height: 400px;
@@ -374,8 +398,8 @@ flex-direction: row;}
 
 .superior{
     position: fixed;
-    right: 25%;
-    top: 160px;
+    right: 20px;
+    top: 10px;
 }
 
 .carrito_cantidad{
@@ -393,4 +417,17 @@ flex-direction: row;}
     letter-spacing: -1px;
     line-height: 9px;
 
+}
+
+.col button{
+    background-color: #0c121e;
+    color: white;
+    border-radius: 20px;
+    border-color: white;
+}
+
+.superior button{
+    background-color: #0c121e;
+    color: white;
+    border-radius: 20px;
 }
