@@ -40,17 +40,47 @@
             
         </div>
         <div class="Content">
-            <div class="Categorias">
-                <div class="Movil">
-                    <button class="Liquid-button"> <img src="./Items/Iphone.png" alt=""><br>Movil</button>
+            <div class="portal_venta">
+                <div class="imagen_venta"> <img src="../Items/im_vende.webp" alt=""></div>
+                <div class="formulario_venta">
+                    <h2>Rellene el formulario para saber si le podemos comprar el produto</h2>
+                    <form action="/formulario_cliente">
+                                    
+                        <label for="user">Usuario:</label>
+                        <input type="text" id="user" name="user" placeholder="Su nombre de usuario" required>
+                                    
+                        <br>
+                                    
+                        <label for="email">Correo:</label>
+                        <input type="text" id="email" name="email" placeholder="Su correo electronico" required>
+                                    
+                        <br><br>
+                    <form action="formulario_tipo_producto">
+                        <h4>Tipo de producto</h4>          
+                        <input type="radio" id="pc_sobremesa" name="asign" value="pc_sobremesa">
+                        <label for="pc_sobremesa">PC Sobremesa</label><br>
+                        <input type="radio" id="pc_portatil" name="asign" value="pc_portatil">
+                        <label for="pc_portatil">PC Portatil</label><br>
+                        <input type="radio" id="moviles" name="asign" value="moviles" required>
+                        <label for="moviles">Moviles</label><br><br>
+                    </form>       
+                        
+                                    
+                    <form action="formulario_estado_producto">
+                        <h4>Estado</h4>            
+                        <input type="radio" id="correcto" name="asign" value="correcto">
+                        <label for="correcto">Correcto</label><br>
+                        <input type="radio" id="perfecto" name="asign" value="perfecto">
+                        <label for="perfecto">Perfecto</label><br>
+                        <input type="radio" id="c_complementos" name="asign" value="c_complementos" required>
+                        <label for="c_complementos">Con Complementos (agregar en descripcion)</label><br><br>
+                        <input type="text" size="60" id="descripcion" name="descripcion" placeholder="Descripcion (Agregue informacion del producto como daños, problemas, complementos o si dispone de su caja)"><br><br>
+                        <button type="submit">Enviar</button>
+                    </form>   
+                        
+                                    
+                    </form>
                 </div>
-                <div class="PC Sobremesa">
-                    <button class="Liquid-button"> <img src="./Items/pc-sobremesa.jpg" alt=""><br>PC Sobremesa</button>
-                </div>
-                <div class="PC Portatil">
-                    <button class="Liquid-button"> <img src="./Items/pc-portatil.jpg" alt=""><br>PC Portatil</button>
-                </div>
-
             </div>
         </div>    
     </div>
