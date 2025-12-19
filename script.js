@@ -56,9 +56,13 @@ function Porduct_Overlay(this_clikado){
         document.getElementById("imagen-producto").src = "./Items/Iphone.png"
         document.getElementById("titulo-producto").innerText = "Xiaomi Redmi Note 14 Pro 5G 8/256GB Negro Medianoche Libre"
     }else if(this_clikado.id == "portatil"){
-                document.getElementById("overlayprod").classList.add("active");
+        document.getElementById("overlayprod").classList.add("active");
         document.getElementById("imagen-producto").src = "./Items/portatil.webp"
         document.getElementById("titulo-producto").innerText = "Portátil Lenovo IdeaPad Slim 3 Gen 8 15IRH8 Intel Core i5-13420H/16GB/1TB SSD/15.6"
+    }else if(this_clikado.id == "ordenador"){
+        document.getElementById("overlayprod").classList.add("active");
+        document.getElementById("imagen-producto").src = "./Items/ordenador.png"
+        document.getElementById("titulo-producto").innerText = "Torre PC Tempest Umbra RGB Torre ATX Negra"
     }
 }
 function Product_Overlay_Close(){

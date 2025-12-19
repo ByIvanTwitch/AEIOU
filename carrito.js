@@ -14,7 +14,7 @@ function Product_carrito(){
         portatiles += 1;
         console.log("carrito: portatil detectado")
     }
-    if(currentid == "ordenadores"){
+    if(currentid == "ordenador"){
         ordenadores += 1;
         console.log("carrito: ordenador detectado")
     }

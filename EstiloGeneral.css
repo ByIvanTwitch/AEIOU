@@ -472,3 +472,14 @@ flex-direction: row;}
     justify-content: center;
     text-align: center;
 }
+
+footer{
+    background-color: #0c121e;
+    color: white;
+    padding: 30px;
+}
+
+footer a {
+    padding-left: 20px;
+    color: white;
+}
