@@ -331,7 +331,7 @@ flex-direction: row;}
 
 .product-interior{
     margin-left: 25%;
-    margin-top: 15%;
+    margin-top: 150px;
     background-color: white;
     width: 50%;
     height: 50%;
@@ -339,6 +339,11 @@ flex-direction: row;}
     padding: 10px;
 
     display: flex;
+    padding-top: 20px;
+}
+.product-interior img{
+    height: 400px;
+    width: auto;
 }
 .row{
     display: flex;
@@ -348,4 +353,22 @@ flex-direction: row;}
 .superior{
     position: fixed;
     right: 25%;
+    top: 160px;
+}
+
+.carrito_cantidad{
+    position: fixed;
+    top: -15px;
+    right: 30px;
+    border: red solid;
+    border-radius: 20px;
+    border-width: 5px;
+    background-color: red;
+    height: 10px;
+    white-space: none;
+    gap: none;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 9px;
+
 }

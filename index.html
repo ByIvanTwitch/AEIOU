@@ -24,6 +24,7 @@
         <div class="User" id="User">
             <button onclick="Menu_profile(this)"><img src="./Items/Profile.png" alt=""> <br>Mi cuenta</button>
             <button onclick="window.open('./Paginas/cesta.html')"><img src="./Items/ShopingKart.png" alt=""> <br>Carrito</button>
+            <p class="carrito_cantidad">0</p>
         </div>
     </div>
     <div>
@@ -65,15 +66,16 @@
         </div>    
     </div>
 
-    <div class="product-overlay" id="overlayprod">
+    <div class="product-overlay active" id="overlayprod">
         <div class="product-interior">
             <div class="superior"><button onclick="Product_Overlay_Close()">X</button></div>
             <img src="" alt="imagen producto" id="imagen-producto">
             <div class="col">
-                <p id="texto-producto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ea alias velit quis tempora harum atque est accusantium nesciunt? Molestiae minima perspiciatis corrupti perferendis, quos praesentium autem laboriosam maxime. Repudiandae. </p>
-                <button><p>Añadir a la cesta</p></button>
+                <p id="titulo-producto"> Titulo </p>
+                <button onclick="Product_carrito()"><p>Añadir a la cesta</p></button>
             </div>
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="carrito.js"></script>
 </body>
