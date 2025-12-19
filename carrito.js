@@ -2,7 +2,7 @@ var moviles = 0;
 var ordenadores = 0;
 var portatiles = 0;
 
-var currentid;
+var currentid = "";
 
 //Moviles
 function Product_carrito(){
@@ -17,9 +17,6 @@ function Product_carrito(){
 
     console.log(totalProd)
     
-    if(document.getElementById("carrito_cantidad").textContent == null){
-        document.getElementById("carrito_cantidad").textContent = '0'
-    }
-    document.getElementById("carrito_cantidad").textContent = '1';
+    document.getElementById("carrito_cantidad").textContent = totalProd;
 
 }
