@@ -20,6 +20,14 @@
     background-color: rgb(255, 255, 255);
 }
 
+button{
+    color: #0c121e;  
+}
+
+input{
+    color: #0c121e;
+}
+
 .menu{
     top: 0px;
     left: 0px;
@@ -270,6 +278,7 @@ flex-direction: row;}
  border-radius: 40px;
 }
 .formulario_subida{
+    text-align: start;
     align-self: flex-start;
 }
 
