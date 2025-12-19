@@ -32,7 +32,17 @@ function Menu_profile(){
     }
     else{
         document.getElementById("loged").style.opacity = 0;
-        document.getElementById("loged").style.transform = "translate(89vw ,50px)";
+        document.getElementById("loged").style.transform = "translate(86vw ,0px)";
         loged = false
     }
+}
+
+function Porduct_Overlay(this_clikado){
+    if(this_clikado.id == "movil"){
+        console.log("Movil detectado!")
+        document.getElementById("overlayprod").classList.add("active");
+    }
+}
+function Product_Overlay_Close(){
+    document.getElementById("overlayprod").classList.remove("active");
 }

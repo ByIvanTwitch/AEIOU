@@ -45,21 +45,36 @@
             <div class="anuncio_venta_productos">
                 <img src="./Items/Vender_Productos.png" onclick="window.location.href='./Paginas/vende tus productos.html'" alt="anuncio_venta_de_productos">
             </div>
+            <h2>MOVILES REACONDICIONADOS</h2>
             <div class="products">
                 <div class="scrollmenu">
-                    <button class="Liquid-button"> <img src="./Items/Iphone.png" alt="" draggable="false"> </button>
-                    <button class="Liquid-button"> <img src="./Items/Iphone.png" alt="" draggable="false"> </button>
-                    <button class="Liquid-button"> <img src="./Items/Iphone.png" alt="" draggable="false"> </button>
-                    <button class="Liquid-button"> <img src="./Items/Iphone.png" alt="" draggable="false"> </button>
-                    <button class="Liquid-button"> <img src="./Items/Iphone.png" alt="" draggable="false"> </button>
-                    <button class="Liquid-button"> <img src="./Items/Iphone.png" alt="" draggable="false"> </button>
-                    <button class="Liquid-button"> <img src="./Items/Iphone.png" alt="" draggable="false"> </button>
-                    <button class="Liquid-button"> <img src="./Items/Iphone.png" alt="" draggable="false"> </button>
-                    <button class="Liquid-button"> <img src="./Items/Iphone.png" alt="" draggable="false"> </button>
-                    <button class="Liquid-button"> <img src="./Items/Iphone.png" alt="" draggable="false"> </button>
+                    <button class="Liquid-button" id="movil" onclick="Porduct_Overlay(this)"> <img src="./Items/Iphone.png" alt="" draggable="false"> </button>
+                    <button class="Liquid-button" id="movil" onclick="Porduct_Overlay(this)"> <img src="./Items/Iphone.png" alt="" draggable="false"> </button>
+                    <button class="Liquid-button" id="movil" onclick="Porduct_Overlay(this)"> <img src="./Items/Iphone.png" alt="" draggable="false"> </button>
+                    <button class="Liquid-button" id="movil" onclick="Porduct_Overlay(this)"> <img src="./Items/Iphone.png" alt="" draggable="false"> </button>
+                    <button class="Liquid-button" id="movil" onclick="Porduct_Overlay(this)"> <img src="./Items/Iphone.png" alt="" draggable="false"> </button>
+                    <button class="Liquid-button" id="movil" onclick="Porduct_Overlay(this)"> <img src="./Items/Iphone.png" alt="" draggable="false"> </button>
+                    <button class="Liquid-button" id="movil" onclick="Porduct_Overlay(this)"> <img src="./Items/Iphone.png" alt="" draggable="false"> </button>
+                    <button class="Liquid-button" id="movil" onclick="Porduct_Overlay(this)"> <img src="./Items/Iphone.png" alt="" draggable="false"> </button>
+                    <button class="Liquid-button" id="movil" onclick="Porduct_Overlay(this)"> <img src="./Items/Iphone.png" alt="" draggable="false"> </button>
+                    <button class="Liquid-button" id="movil" onclick="Porduct_Overlay(this)"> <img src="./Items/Iphone.png" alt="" draggable="false"> </button>
                 </div>
             </div>
+            <h2>PORTATILES REACONDICIONADOS</h2>
+            <h2>VIDEOCONSOLAS REACONDICIONADAS</h2>
         </div>    
+    </div>
+
+    <div class="product-overlay" id="overlayprod">
+        <div class="product-interior">
+            <div class="superior"><button onclick="Product_Overlay_Close()">X</button></div>
+            <img src="" alt="imagen producto" id="imagen-producto">
+            <div class="col">
+                <p id="texto-producto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ea alias velit quis tempora harum atque est accusantium nesciunt? Molestiae minima perspiciatis corrupti perferendis, quos praesentium autem laboriosam maxime. Repudiandae. </p>
+                <button><p>Añadir a la cesta</p></button>
+                <button><p>Comprar</p></button>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
