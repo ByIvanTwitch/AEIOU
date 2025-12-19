@@ -1,5 +1,10 @@
 /* General */
 
+@font-face {
+    font-family: Raleway;
+    src: url(Raleway-VariableFont_wght.ttf);
+}
+
 @keyframes fadein{
     from{background-position: 100% 100%; scale: 1;}
     to{background-position: 0px 0px; scale: 1.1;}
@@ -9,6 +14,7 @@
     to{background-position: 100% 100%; scale: 1;}
 }
 .body{
+    font-family: Raleway;
     margin: 0px;
     padding: 0px;
     background-color: rgb(255, 255, 255);
@@ -97,7 +103,6 @@
 
 .aside a{
     padding-left: 10px;
-    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     line-height: 40px;
     font-size: 15px;
@@ -266,7 +271,6 @@ flex-direction: row;}
     text-align: center;
     margin-top: 5%;
     width: 700px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -279,7 +283,6 @@ flex-direction: row;}
     text-align: center;
     margin-top: 5%;
     color: black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: none;
     
 }

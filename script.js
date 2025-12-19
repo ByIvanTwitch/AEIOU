@@ -25,14 +25,16 @@ function Menu_displace(){
 }
 
 function Menu_profile(){
+
     if(loged == false){
         document.getElementById("loged").style.opacity = 1;
         document.getElementById("loged").style.transform = "translate(-89vw ,-65px);";
         loged = true
     }
     else{
+        let posx = document.getElementById("User").getBoundingClientRect().left;
         document.getElementById("loged").style.opacity = 0;
-        document.getElementById("loged").style.transform = "translate(86vw ,0px)";
+        document.getElementById("loged").style.transform = `translate(${posx}px ,0px)`;
         loged = false
     }
 }
