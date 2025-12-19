@@ -40,9 +40,12 @@ function Menu_profile(){
 }
 
 function Porduct_Overlay(this_clikado){
+    currentid = this_clikado.id
     if(this_clikado.id == "movil"){
         console.log("Movil detectado!")
         document.getElementById("overlayprod").classList.add("active");
+        document.getElementById("imagen-producto").src = "./Items/Iphone.png"
+        document.getElementById("titulo-producto").innerText = "Xiaomi Redmi Note 14 Pro 5G 8/256GB Negro Medianoche Libre"
     }
 }
 function Product_Overlay_Close(){
