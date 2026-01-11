@@ -5,6 +5,32 @@
     Menu_displace()
     Menu_profile()
 
+    document.getElementById("menuaside").innerHTML = `            
+            <a href="./index.html">Inicio</a>
+            <a href="./moviles.html">Moviles</a>
+            <a href="./pc-sobremesa.html">Pc Sobremesa</a>
+            <a href="./pc-portatil.html">Pc Portatiles</a>
+            <a href="./vende tus productos.html">Vende tus productos</a>
+            <a href="./sube tus productos.html">Sube tus productos</a>
+            <a href="./trabaja con nosotros.html">Trabaja con nosotros</a>
+            <a href="./contacto.html">Contacto</a>
+            <a href="googleTranslateElementInit()" id="google_translate_element"></a>`
+
+    document.querySelector("footer").innerHTML = `
+    TecFresh 2025 - Todos los derechos reservados
+        
+    <a href="https://www.instagram.com" target="_blank" style="text-decoration: none;">
+        <img src="../instagram.png" alt="Instagram" style="width: 30px;">
+    </a>
+    
+    <a href="https://www.tiktok.com" target="_blank" style="text-decoration: none;">
+        <img src="../tik-tok.png" alt="tiktok" style="width: 30px;">
+    </a>
+    
+    <a href="https://www.facebook.com" target="_blank" style="text-decoration: none;">
+        <img src="../facebook.png" alt="Facebook" style="width: 30px;">
+    </a>`
+
 function Menu_displace(){
     console.log(document.getElementById("menuaside").classList)
 
