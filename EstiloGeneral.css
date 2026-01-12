@@ -112,7 +112,7 @@ input{
 }
 
 .Buscador input{
-    width: 500px;
+    min-width: 500px;
     margin: 2px;
     border-radius: 10px;
     align-items: center;
@@ -123,6 +123,16 @@ input{
 }
 .Buscador ::placeholder { color: rgb(255, 255, 255); }
 
+@media only screen and (max-width:1000px) {
+    .Buscador input{
+        min-width: 300px;
+    }
+}
+@media only screen and (max-width:600px) {
+    .Buscador input{
+        min-width: 200px;
+    }
+}
 
 .aside{
     display: flex;
