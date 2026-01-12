@@ -137,12 +137,14 @@ input{
 .aside{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    width: 200px;
+    flex-direction: row;
+    width: 100%;
     position: fixed;
     z-index: 100;
-    height: 100%;
-    background-color: #0c121e;   
+    height: 50px;
+    background-color: #0c121e;  
+    text-align: center; 
+    justify-content: center;
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.05), inset 2px 2px 1px 0 rgba(255, 255, 255, 0), inset -1px -1px 1px 1px rgba(255, 255, 255, 0.1);
 }
 
@@ -163,6 +165,20 @@ input{
     background-color: white;
     animation-name: inbutton;
     animation-duration: 0.5s;
+}
+
+@media only screen and (max-width:1000px) {
+    .aside{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 200px;
+        position: fixed;
+        z-index: 100;
+        height: 100%;
+        text-align: start; 
+        justify-content: start;
+    }
 }
 
 .asidebut{
