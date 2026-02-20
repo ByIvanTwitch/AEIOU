@@ -6,7 +6,7 @@
     Menu_profile()
 
     document.getElementById("menuaside").innerHTML = `            
-            <a href="./index.html">Inicio</a>
+            <a href="../index.html">Inicio</a>
             <a href="./moviles.html">Moviles</a>
             <a href="./pc-sobremesa.html">Pc Sobremesa</a>
             <a href="./pc-portatil.html">Pc Portatiles</a>
