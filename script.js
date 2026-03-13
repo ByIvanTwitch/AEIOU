@@ -7,13 +7,13 @@
 
     document.getElementById("menuaside").innerHTML = `            
             <a href="../index.html">Inicio</a>
-            <a href="./moviles.html">Moviles</a>
-            <a href="./pc-sobremesa.html">Pc Sobremesa</a>
-            <a href="./pc-portatil.html">Pc Portatiles</a>
-            <a href="./vende tus productos.html">Vende tus productos</a>
-            <a href="./sube tus productos.html">Sube tus productos</a>
-            <a href="./trabaja con nosotros.html">Trabaja con nosotros</a>
-            <a href="./contacto.html">Contacto</a>
+            <a href="../Paginas/moviles.html">Moviles</a>
+            <a href="../Paginas/pc-sobremesa.html">Pc Sobremesa</a>
+            <a href="../Paginas/pc-portatil.html">Pc Portatiles</a>
+            <a href="../Paginas/vende tus productos.html">Vende tus productos</a>
+            <a href="../Paginas/sube tus productos.html">Sube tus productos</a>
+            <a href="../Paginas/trabaja con nosotros.html">Trabaja con nosotros</a>
+            <a href="../Paginas/contacto.html">Contacto</a>
             <a href="googleTranslateElementInit()" id="google_translate_element"></a>`
 
     document.querySelector("footer").innerHTML = `

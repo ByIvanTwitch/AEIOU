@@ -24,55 +24,69 @@
     to{opacity: 100%;}
 }
 
+:root{
+    --color-primario: #1f80ff;
+    --color-secundario: #ffffff; 
+}
 
+/* ELEMENTOS PRINCIPALES */
 body{
     min-height: 100%;
     position: relative;
     font-family: Raleway;
     margin: 0px;
     padding: 0px;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--color-secundario);
 
     
 }
-
-.body{
-    min-height: 100%;
-    position: relative;
-    font-family: Raleway;
-    margin: 0px;
-    padding: 0px;
-    background-color: rgb(255, 255, 255);
-
-}
-
 button{
-    color: #0c121e;  
+    color: var(--color-primario);  
 }
-
 input{
-    color: #0c121e;
+    color: var(--color-primario);
 }
-
+i{
+    font-size: x-large;
+    color: var(--color-secundario);
+}
+/* MENU */
 .menu{
+    position: fixed;
+    
     top: 0px;
     left: 0px;
     z-index: 9999;
-    position: fixed;
+    
+    height: 60px;
     width: 100%;
-    flex-direction: row;
+    
     display: flex;
+    flex-direction: row;
+
     align-items: center;
     align-content: center;
     align-self: center;
-    background-color: #0c121e;
     justify-content: space-between;
-    color: white;
+    
+    color: var(--color-secundario);
+
+    background-color: var(--color-primario);
 }
 .menu img{
     height: 30px;
     width: auto;
 }
+.menu button{
+    border: none;
+    width: auto;
+
+    color: var(--color-secundario);
+    
+    background-color: transparent;
+}
+
+/* TITULO */
 .Title img{
     padding-right: 50px;
 }
@@ -80,48 +94,40 @@ input{
     display: flex;
     flex-direction: row;
     align-items: center;
-
 }
 .Title button{
     scale: 0.75;
+    
 }
 .Title button img, .Buscador button img, .User button img{
     width: 30px; 
-    height: auto;}
-
-.menu button{
-    background-color: transparent;
-    border: none;
-    width: auto;
-    color: white;
+    height: auto;
 }
-
-
 .User button{
     width: 90px;
 }
 
+/* BUSCADOR */
 .Buscador {
     position: absolute;
     transform: translateX(calc(50vw - 250px));
     display:flex;
 }
-
 .Buscador button{
     margin-bottom: 0;
 }
-
 .Buscador input{
     min-width: 500px;
     margin: 2px;
     border-radius: 10px;
     align-items: center;
     padding-left:5px;
-    background-color: rgb(54, 56, 75);
+    background-color: var(--color-secundario);
     border: 0px;
-    color: white; 
+    color: var(--color-primario); 
+    font-weight: 100;
 }
-.Buscador ::placeholder { color: rgb(255, 255, 255); }
+.Buscador ::placeholder { font-weight: 600; color: var(--color-primario) }
 
 @media only screen and (max-width:1000px) {
     .Buscador input{
@@ -142,7 +148,7 @@ input{
     position: fixed;
     z-index: 100;
     height: 50px;
-    background-color: #0c121e;  
+    background-color: var(--color-primario);  
     text-align: center; 
     justify-content: center;
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.05), inset 2px 2px 1px 0 rgba(255, 255, 255, 0), inset -1px -1px 1px 1px rgba(255, 255, 255, 0.1);
@@ -155,9 +161,9 @@ input{
     text-decoration: none;
     line-height: 30px;
     font-size: 15px;
-    background-color: #ffffff;
+    background-color: var(--color-secundario);
 
-    color: #0c121e;
+    color: var(--color-primario);
 
     border: none;
     text-align: left;
@@ -168,8 +174,8 @@ input{
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.05), inset 2px 2px 1px 0 rgba(255, 255, 255, 0), inset -1px -1px 1px 1px rgba(255, 255, 255, 0.1);
 }
 .aside a:hover{
-    color: #0c121e;
-    background-color: white;
+    color: var(--color-primario);
+    background-color: var(--color-secundario);
     animation-name: inbutton;
     animation-duration: 0.5s;
 
@@ -199,9 +205,9 @@ input{
     text-decoration: none;
     line-height: 40px;
     font-size: 15px;
-    background-color: #ffffff;
+    background-color: var(--color-secundario);
 
-    color: white;
+    color: var(--color-secundario);
 
     border: none;
     text-align: left;
@@ -212,7 +218,7 @@ input{
     border-style: solid;
     border-width: 1px;
     border-radius: 30px;
-    border-color: white;
+    border-color: var(--color-secundario);
     background: linear-gradient(45deg,#0c121e0e , #ffffff00, #0c121e44);
     cursor: pointer;
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.05), inset 2px 2px 1px 0 rgba(255,255,255,0.1), inset -1px -1px 1px 1px rgba(255, 255, 255, 0.1);
@@ -256,8 +262,8 @@ input{
 
     font-size: 50px;
 
-    background-color: #0c121e;
-    color: white;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
 }
 
 .Content{
@@ -290,7 +296,7 @@ input{
     height: 75px;
     width: 100px;
     position: fixed;
-    background-color: #0c121e;
+    background-color: var(--color-primario);
     transform:translate(89vw ,5px);
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.05), inset 2px 2px 1px 0 rgba(255, 255, 255, 0), inset -1px -1px 1px 1px rgba(255, 255, 255, 0.1);
     z-index: 1;
@@ -298,13 +304,13 @@ input{
 .LoginMenu button{
     height: 100%;
     background-color: transparent;
-    color: white;
+    color: var(--color-secundario);
     border: none;
 }
 
 .LoginMenu button:hover{
-    background-color: white;
-    color:#0c121e;
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
 }
 
 
@@ -414,7 +420,7 @@ flex-direction: row;}
 
     justify-content: center;
 
-    color: black;
+    color: var(--color-primario);
     text-decoration: none;
     
 }
@@ -429,7 +435,7 @@ flex-direction: row;}
     display: flex;
     flex-wrap: wrap;
     text-decoration: none;
-    color: black;
+    color: var(--color-primario);
 
     margin: 0;
 }
@@ -442,7 +448,7 @@ flex-direction: row;}
     display: flex;
     flex-wrap: wrap;
     text-decoration: none;
-    color: black;
+    color: var(--color-primario);
 }
 
 .scrollmenu{
@@ -481,7 +487,7 @@ flex-direction: row;}
 .product-interior{
     margin-left: 25%;
     margin-top: 150px;
-    background-color: white;
+    background-color: var(--color-secundario);
     width: 50%;
     height: 50%;
     border-radius: 10px;
@@ -493,7 +499,7 @@ flex-direction: row;}
     border-style: solid;
     border-width: 1px;
     border-radius: 30px;
-    border-color: white;
+    border-color: var(--color-secundario);
     background: linear-gradient(45deg,#e6ebf7e0 , #fffffff3, #d2ddf3f3);
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.05), inset 2px 2px 1px 0 rgba(255,255,255,0.1), inset -1px -1px 1px 1px rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(3px);
@@ -531,15 +537,15 @@ flex-direction: row;}
 }
 
 .col button{
-    background-color: #0c121e;
-    color: white;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
     border-radius: 20px;
-    border-color: white;
+    border-color: var(--color-secundario);
 }
 
 .superior button{
-    background-color: #0c121e;
-    color: white;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
     border-radius: 20px;
 }
 
@@ -552,10 +558,10 @@ flex-direction: row;}
     position: fixed;
     z-index: 100;
     height: 100%;
-    background-color: #0c121e;  
+    background-color: var(--color-primario);  
     right: 0px; 
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.05), inset 2px 2px 1px 0 rgba(255, 255, 255, 0), inset -1px -1px 1px 1px rgba(255, 255, 255, 0.1);
-    color: white;
+    color: var(--color-secundario);
 }
 
 .otherside.active{
@@ -574,7 +580,7 @@ flex-direction: row;}
 .toped button{
     background-color: transparent;
     border: none;
-    color: white;
+    color: var(--color-secundario);
     font-weight: 800;
 }
 
@@ -600,12 +606,12 @@ footer{
     width: 100%;
     height: 30px;
 */
-    background-color: #0c121e;
-    color: white;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
     padding: 20px;
 }
 
 footer a {
     padding-left: 20px;
-    color: white;
+    color: var(--color-secundario);
 }

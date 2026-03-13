@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TECFRESH - Inicio</title>
     <link rel="stylesheet" href="./EstiloGeneral.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 <body class="body">
     <div class="LoginMenu" id="loged">
@@ -13,17 +14,17 @@
     </div>
     <div class="menu">
         <div class="Title">
-            <button> <img src="./Items/three-bar-icon.jpg" alt="" onclick="Menu_displace()">  </button>
+            <button onclick="Menu_displace()"><i class="fa-solid fa-bars"></i></button>
             <img src="./Items/Logo Horizontal.png" alt="Titulo">
         </div>
         <div class="Buscador">
             <input placeholder="Buscar...">
             <br>
-            <button><img src="./Items/Search.png" alt=""></button>
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
         <div class="User" id="User">
-            <button onclick="Menu_profile(this)"><img src="./Items/Profile.png" alt=""> <br>Mi cuenta</button>
-            <button onclick="Menu_cesta()"><img src="./Items/ShopingKart.png" alt=""> <br>Carrito</button>
+            <button onclick="Menu_profile(this)"> <i class="fa-solid fa-user"></i> <br>Mi cuenta</button>
+            <button onclick="Menu_cesta()"> <i class="fa-solid fa-basket-shopping"></i> <br>Carrito</button>
             <p class="carrito_cantidad" id="carrito_cantidad">0</p>
         </div>
     </div>
@@ -124,6 +125,7 @@
         <img src="./facebook.png" alt="Facebook" style="width: 30px;">
     </a>
 </footer>
+    <script src="./script.js"></script>
     <script src="./carrito.js"></script>
     <script src="./idiomas.js"></script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
