@@ -24,6 +24,14 @@
     to{opacity: 100%;}
 }
 
+.notable-regular {
+  font-family: "Notable", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: large;
+}
+
+
 :root{
     --color-primario: #1f80ff;
     --color-secundario: #ffffff; 
@@ -392,6 +400,8 @@ flex-direction: row;}
 /*PAGINA SOBRE NOSOTROS*/
 
 .explicacion_empresa{
+    box-sizing: border-box;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     align-self: center;
@@ -399,9 +409,9 @@ flex-direction: row;}
         text-align: center;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 5px;
     width: 100%;
-    margin-bottom: 20px;
+    font-size: 16px;
 }
 
 

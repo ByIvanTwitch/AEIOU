@@ -14,8 +14,23 @@
             <a href="../Paginas/sube tus productos.html">Sube tus productos</a>
             <a href="../Paginas/trabaja con nosotros.html">Trabaja con nosotros</a>
             <a href="../Paginas/contacto.html">Contacto</a>
+            <a href="../Paginas/sobrenosotros.html">Sobre Nosotros</a>
             <a href="googleTranslateElementInit()" id="google_translate_element"></a>`
-
+    document.querySelector(".menu").innerHTML = `
+        <div class="Title">
+            <button onclick="Menu_displace()"><i class="fa-solid fa-bars"></i></button>
+            <p class="notable-regular">TECHFRESH</p>
+        </div>
+        <div class="Buscador">
+            <input placeholder="Buscar...">
+            <br>
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="User" id="User">
+            <button onclick="Menu_profile(this)"> <i class="fa-solid fa-user"></i> <br>Mi cuenta</button>
+            <button onclick="Menu_cesta()"> <i class="fa-solid fa-basket-shopping"></i> <br>Carrito</button>
+            <p class="carrito_cantidad" id="carrito_cantidad">0</p>
+        </div>`
     document.querySelector("footer").innerHTML = `
     TecFresh 2025 - Todos los derechos reservados
         
